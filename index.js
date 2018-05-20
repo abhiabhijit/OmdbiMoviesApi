@@ -125,7 +125,7 @@ $(document).ready(function() {
 
             type: 'GET', // request type GET, POST, PUT
             async: true,
-            url: 'http://www.omdbapi.com/?apikey=89bb80f' + para, // URL of getting data
+            url: 'https://www.omdbapi.com/?apikey=89bb80f' + para, // URL of getting data
 
             success: (data) => {
                 $("#head").show();
