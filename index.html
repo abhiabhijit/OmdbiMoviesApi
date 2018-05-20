@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <title>Jquery Ajax</title>
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/starter-template.css" rel="stylesheet">
+      
+   </head>
+   <body >
+      <main role="main" class="container">
+         <div style="padding-left: 50%;padding-bottom: 50px;" id="loader">
+            <div class="loader" ></div>
+         </div>
+         <h1 id="head" style="text-align: center;color: white;">Movies Application</h1>
+         <div class="row" id="inputform">
+            <div class="col-lg-12">
+               <div class="bs-component">
+                  <div class="well form-search" id="search-by-title-form"  >
+                     <div>
+                        <label class="control-label" >Search By:</label>
+                        <select id="column-select" name="select" style="width: 100px;" class="form-control" >
+                           <option value="search" selected="selected" >Name</option>
+                           <option value="id" >ID</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <br>
+                        <label class="control-label" for="t" id="imdbid1">IMDB ID:</label>
+                        <input type="text" id="imdbid2" placeholder="Enter the IMDBid" class="input-small form-control" required>
+                        &nbsp;&nbsp;
+                        <div id="q">
+                           <label class="control-label" for="t">Title:</label>
+                           <input type="text" id="t" placeholder="Enter the Title" name="t" class="input-small form-control">
+                        </div>
+                        &nbsp;&nbsp;
+                        <div id="w">
+                           <label class="control-label" for="y">Year:</label>
+                           <input type="text" id="y" name="y" placeholder="Enter the Year of release" class="input-small form-control" style="width: 200px;">
+                        </div>
+                        &nbsp;&nbsp;
+                        <br>
+                        <label class="control-label" id="plot0">Plot Length:</label>
+                        <select name="plot" style="width: 100px;" class="form-control" id="plot2" >
+                           <option value="short" >Short</option>
+                           <option value="full" selected="selected" >Full</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <br>
+                        <label class="control-label">Type:</label>
+                        <select name="type" style="width: 100px;" class="form-control" id="type" >
+                           <option value="movie" >Movie</option>
+                           <option value="series">Series</option>
+                           <option value="episode">Episode</option>
+                        </select>
+                        &nbsp;&nbsp;
+                        <br>
+                     </div>
+                  </div>
+                  <a href="#" id="submitbutton"  class="btn-sm btn-primary">Search</a>
+                  <!-- <button id="submitbutton" type="button" onclick="function" class="btn-sm btn-primary">Search </button> -->
+                  <br><br>
+               </div>
+            </div>
+         </div>
+         <div id="final2" style="display: flex;justify-content: center;"></div>
+         <div class="row" id="final" style="padding-top: 100px;">
+         </div>
+         <div id="final1" style=" padding-top:50px;display: flex;justify-content: center;"></div>
+      </main>
+      <!-- /.container -->
+      <!-- Bootstrap core JavaScript
+         ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="jquery-3.3.1.min.js"></script>
+      <script src="index.js"></script>
+      <script type="text/javascript"></script>
+   </body>
+</html>
